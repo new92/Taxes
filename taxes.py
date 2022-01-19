@@ -9,9 +9,10 @@
 "Austria" == 9481
 "France" == 8305
 "United_Kingdom" == 3873
-"Japan" == 7592 
-countries=["Germany","Switzerland","Sweden","USA","Russia","China","Australia","Canada","Austria","France","UK","Japan"] 
-countries_codes=["2575","3892","1583","3915","6179","7229","4408","6028","9481","8305","3873","7592"] 
+"Japan" == 7592
+"Italy" == 1047 
+countries=["Germany","Switzerland","Sweden","USA","Russia","China","Australia","Canada","Austria","France","UK","Japan","Italy"] 
+countries_codes=["2575","3892","1583","3915","6179","7229","4408","6028","9481","8305","3873","7592","1047"] 
 for i in range(len(countries)): 
 	print(countries[i],countries_codes[i])  
 first_name=input("Please insert your first name: ")
@@ -206,4 +207,20 @@ elif country_code == 7592 and incomes <= 304680:
     print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_jp_40)
 elif country_code == 7592 and incomes > 304681:
     tax_jp_45=incomes*0.45
-    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_jp_45) 
+    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_jp_45)
+#Italy
+elif country_code == 1047 and incomes <= 15000:
+    tax_it_23=incomes*0.23
+    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_it_23)
+elif country_code == 1047 and incomes <= 28000:
+    tax_it_27=incomes*0.27
+    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_it_27)
+elif country_code == 1047 and incomes <= 55000:
+    tax_it_38=incomes*0.38
+    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_it_38)
+elif country_code == 1047 and incomes <= 75000:
+    tax_it_41=incomes*0.41
+    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_it_41)
+elif country_code == 1047 and incomes > 75000:
+    tax_it_43=incomes*0.43
+    print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_it_43) 
