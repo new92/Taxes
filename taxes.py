@@ -12,8 +12,10 @@
 "Japan" == 7592
 "Italy" == 1047
 "Belgium" == 5793
-countries=["Germany","Switzerland","Sweden","USA","Russia","China","Australia","Canada","Austria","France","UK","Japan","Italy","Belgium"] 
-countries_codes=["2575","3892","1583","3915","6179","7229","4408","6028","9481","8305","3873","7592","1047","5793"] 
+"Brazil" == 9148
+"Turkey" == 3890"
+countries=["Germany","Switzerland","Sweden","USA","Russia","China","Australia","Canada","Austria","France","UK","Japan","Italy","Belgium","Brazil","Turkey"] 
+countries_codes=["2575","3892","1583","3915","6179","7229","4408","6028","9481","8305","3873","7592","1047","5793","9148","3890"] 
 for i in range(len(countries)): 
 	print(countries[i],countries_codes[i])  
 first_name=input("Please insert your first name: ")
@@ -233,8 +235,39 @@ elif country_code == 5793 and incomes <= 23900:
     tax_bel_40=incomes*0.40
     print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_bel_40)
 elif country_code == 5793 and incomes <= 41360:
-    tax_bel_45=incomes*45
+    tax_bel_45=incomes*0.45
     print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_bel_45)
 elif country_code == 5793 and incomes > 41360:
-    tax_bel_50=incomes*50
+    tax_bel_50=incomes*0.50
     print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_bel_50)
+#Brazil 
+elif country_code == 9148 and incomes <= 1903: 
+	tax_brzl_0=0 
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_brzl_0)
+elif country_code == 9148 and incomes <= 2826: 
+	tax_brzl_7=incomes*0.7
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_brzl_7) 
+elif country_code == 9148 and incomes <= 3751: 
+	tax_brzl_15=incomes*0.15 
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_brzl_15)
+elif country_code == 9148 and incomes <= 4664: 
+	tax_brzl_22=incomes*0.22
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_brzl_22) 
+elif country_code == 9148 and incomes > 4665: 
+	tax_brzl_27=incomes*0.27 
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_brzl_27) 
+#Turkey
+elif country_code == 3890 and incomes <= 22000: 
+	tax_tr_15=incomes*0.15
+elif country_code == 3890 and incomes <= 49000: 
+	tax_tr_20=incomes*0.20 
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_tr_20) 
+elif country_code == 3890 and incomes <= 180000: 
+	tax_tr_27=incomes*0.27 
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_tr_27) 
+elif country_code == 3890 and incomes <= 600000: 
+	tax_tr_35=incomes*0.35 
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_tr_35) 
+elif country_code == 3890 and incomes > 600001: 
+	tax_tr_40=incomes*0.40
+	print(first_name,"the amount of money which you'll pay in taxes is this: ",tax_tr_40) 
